@@ -10,4 +10,5 @@ B. Ko nepavyko / nespėjai padaryti?
 
 C. Ką tobulintum toliau, jei tai būtų tavo projektas?
 
-  Užbaigčiau highlight feature, papildyčiau statomų objektų sąrašą, bandyčiau implementuoti snap funkciją, kad objektai lygiai susidėliotų.
+  Užbaigčiau highlight feature, papildyčiau statomų objektų sąrašą, bandyčiau implementuoti snap funkciją, kad objektai lygiai susidėliotų ir taip
+  perdaryčiau UI.
