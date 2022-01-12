@@ -6,8 +6,11 @@ public class Object_Placement : MonoBehaviour
 {
     public GameObject furniture; // baldų objektas
     public Material yellow, red, green, black, blue, yellowtrans, redtrans, greentrans, blacktrans, bluetrans; // material spalvos
+    [SerializeField]
     private GameObject Selector; // manager, kuris atsakingas už jau padėtų objektų redagavimą
+    [SerializeField]
     private GameObject Panel; // panelė iš kurios galima pasirinkti norimus baldus
+    [SerializeField]
     private Camera cam; // pagrindinė kamera
     private float mouseRotation; // pelės scroll wheel pasukimas
     private int layer_mask; // kaukė

@@ -6,6 +6,7 @@ public class EditBuilt : MonoBehaviour
 {
     RaycastHit hit;
     private int layer_mask;
+    [SerializeField]
     private GameObject furniture;
     public GameObject Info;
     private bool onOff = false;
@@ -29,6 +30,7 @@ public class EditBuilt : MonoBehaviour
         if (Physics.Raycast(ray, out hit, 500.0f, layer_mask))
         {
             // Nebaigtas metodas, kuris užvedus pelę ant objekto jį paryškina(nesigavo gražinti į pradinę material būseną)
+
             //if (hit.transform.CompareTag(selectTag))
             //{
             //    if (hit.transform.GetComponent<Renderer>() != null)
