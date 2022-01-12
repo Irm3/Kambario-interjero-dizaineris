@@ -6,9 +6,9 @@ A. Kas buvo sunkiausia atliekant užduotį?
 
 B. Ko nepavyko / nespėjai padaryti?
 
-  Bandžiau padaryti, kad užvedus pelę ant objekto, jis keistų savo material (highlight), nepavyko gražinti į prieš tai buvusią material atitraukus pelę.
+  Bandžiau padaryti, kad užvedus pelę ant objekto, jis keistų savo material, taptu paryškintas, bet nepavyko gražinti į prieš tai buvusią material atitraukus pelę.
 
 C. Ką tobulintum toliau, jei tai būtų tavo projektas?
 
   Užbaigčiau highlight feature, papildyčiau statomų objektų sąrašą, bandyčiau implementuoti snap funkciją, kad objektai lygiai susidėliotų ir taip
-  perdaryčiau UI.
+  perdaryčiau vartotojo sąsają.
