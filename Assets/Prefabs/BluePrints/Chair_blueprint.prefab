@@ -27,8 +27,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3795584222466182058}
-  m_LocalRotation: {x: 0, y: 0.70710677, z: 0.70710677, w: 0}
-  m_LocalPosition: {x: -2.269328, y: 5.9604643e-10, z: -0.74476844}
+  m_LocalRotation: {x: -0.1734762, y: 0.6854969, z: 0.6854969, w: 0.17347622}
+  m_LocalPosition: {x: 4.7489996, y: 0, z: -3.202}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -117,10 +117,13 @@ MonoBehaviour:
   yellow: {fileID: 2100000, guid: c662ffa9642e5c948b4fdf749e24ec58, type: 2}
   red: {fileID: 2100000, guid: 0721dc0660223b34298718d5b6cd3e7a, type: 2}
   green: {fileID: 2100000, guid: a98ba656fb29f1044883a441d95ffea0, type: 2}
-  black: {fileID: 2100000, guid: 1e70ad75d27e35b478bfb6da0e0f0a15, type: 2}
+  original: {fileID: 2100000, guid: 1e70ad75d27e35b478bfb6da0e0f0a15, type: 2}
   blue: {fileID: 2100000, guid: d9e1d785efbb65f439969e7b7d204752, type: 2}
   yellowtrans: {fileID: 2100000, guid: 6f835ac8601df204eab6300b2ff75cb5, type: 2}
   redtrans: {fileID: 2100000, guid: f9fca159226763047a9d1cf13c348ae8, type: 2}
   greentrans: {fileID: 2100000, guid: baba6c653fc1b9b479b008f16a0bbb7e, type: 2}
-  blacktrans: {fileID: 2100000, guid: e3c9450430cf95841be7de97eaaf5fe6, type: 2}
+  originaltrans: {fileID: 2100000, guid: e3c9450430cf95841be7de97eaaf5fe6, type: 2}
   bluetrans: {fileID: 2100000, guid: b2c608d50b73c0f40b73710f63da31c7, type: 2}
+  Selector: {fileID: 0}
+  Panel: {fileID: 0}
+  cam: {fileID: 0}

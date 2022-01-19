@@ -5,7 +5,7 @@ using UnityEngine;
 public class Object_Placement : MonoBehaviour
 {
     public GameObject furniture; // baldų objektas
-    public Material yellow, red, green, black, blue, yellowtrans, redtrans, greentrans, blacktrans, bluetrans; // material spalvos
+    public Material yellow, red, green, original, blue, yellowtrans, redtrans, greentrans, originaltrans, bluetrans; // material spalvos
     [SerializeField]
     private GameObject Selector; // manager, kuris atsakingas už jau padėtų objektų redagavimą
     [SerializeField]
@@ -19,15 +19,15 @@ public class Object_Placement : MonoBehaviour
 
     void Start()
     {
-        layer_mask = LayerMask.GetMask("Furniture"); // kaukė raycastui, kad atpažintu redaguojamus objektus
-        GetComponentInChildren<MeshRenderer>().material = blacktrans; // default spalva blueprinte
-        furniture.GetComponentInChildren<MeshRenderer>().material = black; // default spalva objektui
+        GetComponentInChildren<MeshRenderer>().material = originaltrans; // default spalva blueprinte
+        furniture.GetComponentInChildren<MeshRenderer>().material = original; // default spalva objektui
         Selector = GameObject.FindGameObjectWithTag("Selector"); // suranda select manager
         Panel = GameObject.FindGameObjectWithTag("Panel"); // suranda panelę
         Panel.SetActive(false); // išjungia panelę, nes jau pasirinktas objektas
         Selector.SetActive(false); // išjungia select manager, kad statant naują objektą neleistu redaguoti
         direction = Vector3.up; // default ašis objekto sukimui
         cam = Camera.main; // padaroma pagrindine kamera
+        layer_mask = 1 << LayerMask.NameToLayer("Furniture") | 1 << LayerMask.NameToLayer("Walls"); // kaukės raycastui, kad atpažintu redaguojamus objektus ir sienas su grindimis
     }
 
     void Update()
@@ -52,7 +52,7 @@ public class Object_Placement : MonoBehaviour
 
         //----------------- Objekto drag pagal pelę -----------------
         Ray ray = cam.ScreenPointToRay(Input.mousePosition);
-        if (Physics.Raycast(ray, out hit, 500.0f, 7))
+        if (Physics.Raycast(ray, out hit, 500.0f, layer_mask))
         {
             transform.position = hit.point;
         }
@@ -99,8 +99,8 @@ public class Object_Placement : MonoBehaviour
 
         else if (Input.GetKeyDown(KeyCode.Keypad5))
         {
-            GetComponentInChildren<MeshRenderer>().material = blacktrans;
-            furniture.GetComponentInChildren<MeshRenderer>().material = black;
+            GetComponentInChildren<MeshRenderer>().material = originaltrans;
+            furniture.GetComponentInChildren<MeshRenderer>().material = original;
         }
         //----------------------------------------------------------
     }

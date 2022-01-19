@@ -23,7 +23,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4606097504818533819}
   - component: {fileID: 5816292017295842481}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: Table_blueprint
   m_TagString: Selected
   m_Icon: {fileID: 0}
@@ -38,7 +38,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4328335636388961079}
   m_LocalRotation: {x: -0.5, y: 0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: 2.6529272, y: 0.51199996, z: -0.8970282}
+  m_LocalPosition: {x: 4.476, y: 0.7499999, z: -2.006}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4090838181873099546}
@@ -62,13 +62,16 @@ MonoBehaviour:
   yellow: {fileID: 2100000, guid: c662ffa9642e5c948b4fdf749e24ec58, type: 2}
   red: {fileID: 2100000, guid: 0721dc0660223b34298718d5b6cd3e7a, type: 2}
   green: {fileID: 2100000, guid: a98ba656fb29f1044883a441d95ffea0, type: 2}
-  black: {fileID: 2100000, guid: 82282f4b464fb604c893f69d7c25fe84, type: 2}
+  original: {fileID: 2100000, guid: 82282f4b464fb604c893f69d7c25fe84, type: 2}
   blue: {fileID: 2100000, guid: d9e1d785efbb65f439969e7b7d204752, type: 2}
   yellowtrans: {fileID: 2100000, guid: 6f835ac8601df204eab6300b2ff75cb5, type: 2}
   redtrans: {fileID: 2100000, guid: f9fca159226763047a9d1cf13c348ae8, type: 2}
   greentrans: {fileID: 2100000, guid: baba6c653fc1b9b479b008f16a0bbb7e, type: 2}
-  blacktrans: {fileID: 2100000, guid: a363b3335634b4b4f93da2e97dd13bfc, type: 2}
+  originaltrans: {fileID: 2100000, guid: a363b3335634b4b4f93da2e97dd13bfc, type: 2}
   bluetrans: {fileID: 2100000, guid: b2c608d50b73c0f40b73710f63da31c7, type: 2}
+  Selector: {fileID: 0}
+  Panel: {fileID: 0}
+  cam: {fileID: 0}
 --- !u!1001 &4090838181872670246
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -82,7 +85,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 160806, guid: 6133f78a975db0f4dacf43dbec077916, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 160806, guid: 6133f78a975db0f4dacf43dbec077916, type: 3}
       propertyPath: m_TagString

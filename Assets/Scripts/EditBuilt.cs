@@ -43,9 +43,10 @@ public class EditBuilt : MonoBehaviour
             // Gauną blueprint iš raycast ir sukurią naują blueprint objektą
             if (Input.GetMouseButtonDown(0))
             {
-                Debug.Log("Hit2");
+                //Debug.Log("Hit2");
                 furniture = hit.transform.GetComponent<SavedBluePrint>().blueprint;
-                Debug.Log(furniture.name);
+                //Debug.Log(furniture.name);
+                furniture.transform.rotation = hit.transform.rotation;
                 Destroy(hit.transform.gameObject);
                 Instantiate(furniture);
             }
